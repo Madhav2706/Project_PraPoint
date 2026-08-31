@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PraPoint — Student Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pra-theme">
+  <nav class="main-nav" role="navigation" aria-label="Main">
+    <ul class="nav-list">
+      <li><a href="#home" class="nav-link" data-page="home">Home</a></li>
+      <li><a href="#menu" class="nav-link" data-page="menu">Menu</a></li>
+      <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+      <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+      <li><button id="themeToggle" class="nav-link">🌙 Dark Mode</button></li>
+    </ul>
+  </nav>
+
+  <header class="site-header container">
+    <div class="logo-group">
+      <a class="logo" href="#home" data-page="home">PraPoint</a>
+      <p class="tagline">Student project — food delivery demo</p>
+    </div>
+    <div class="header-actions">
+      <button id="openSearch" class="action-btn">Search</button>
+      <button id="openSign" class="action-btn">Sign in</button>
+    </div>
+  </header>
+
+  <main class="page-wrap container" id="app">
+    <section id="home" class="page-section active" aria-labelledby="home-title">
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Order delicious food — fast</h1>
+            <p>Simple student project 🤓 — browse restaurants and dishes below.</p>
+            <div class="hero-cta">
+              <button class="btn btn-primary">Order Now</button>
+              <button class="btn btn-secondary">View Promos</button>
+            </div>
+          </div>
+          <div>
+            <div class="promo-carousel">
+              <div class="promo-card"><div class="discount">50%</div><h3>New User</h3><p>Demo discount</p></div>
+              <div class="promo-card"><div class="discount">₹399</div><h3>No Delivery</h3><p>On orders over ₹25</p></div>
+              <div class="promo-card"><div class="discount">2x</div><h3>Points</h3><p>Wednesdays</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main class="container">
+        <section>
+          <h2 class="section-title">Browse Categories</h2>
+          <div class="categories">
+            <div class="category-chip active">All</div>
+            <div class="category-chip">🍕 Pizza</div>
+            <div class="category-chip">🍔 Burgers</div>
+            <div class="category-chip">🍜 Asian</div>
+            <div class="category-chip">🥗 Salads</div>
+            <div class="category-chip">🍰 Desserts</div>
+            <div class="category-chip">🛒 Grocery</div>
+          </div>
+        </section>
+
+        <section>
+          <div class="filters-bar">
+            <span style="font-weight:600;font-size:13px;">Filter by:</span>
+            <div class="filter-chip">💰 Budget</div>
+            <div class="filter-chip">⭐ Highly Rated</div>
+            <div class="filter-chip">⚡ Fastest</div>
+            <div class="filter-chip">🔥 Popular</div>
+          </div>
+        </section>
+
+        <section class="restaurants-grid">
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=60" alt="Mario's Pizzeria" />
+              <div class="restaurant-badges"><span class="badge">Popular</span></div>
+            </div>
+            <div class="restaurant-info">
+              <div class="restaurant-name">Mario's Pizzeria</div>
+              <div class="restaurant-cuisine">Italian • Pizza</div>
+              <div class="restaurant-meta">
+                <span>⭐ 4.8 (2340)</span>
+                <span>⏱ 20-30m</span>
+                <span>💰 ₹239</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60" alt="Burger Factory" />
+              <div class="restaurant-badges"><span class="badge new">New</span></div>
+            </div>
+            <div class="restaurant-info">
+              <div class="restaurant-name">Burger Factory</div>
+              <div class="restaurant-cuisine">American • Burgers</div>
+              <div class="restaurant-meta">
+                <span>⭐ 4.6 (1890)</span>
+                <span>⏱ 15-25m</span>
+                <span>💰 ₹259</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="split-section">
+        <div class="split-inner">
+          <div class="split-text">
+            <h2>Everything you crave, delivered.</h2>
+            <h4>Your favorite local restaurants</h4>
+            <p>Get a slice of pizza or the whole pie delivered — fast delivery and reliable partners, demo version for the project.</p>
+            <a class="link-cta" href="#menu" data-page="menu">Find restaurants</a>
+          </div>
+          <div class="split-image">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80" alt="Pizza on board" />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="menu" class="page-section" aria-labelledby="menu-title">
+      <h2 id="menu-title">Menu — sample restaurants</h2>
+      <p class="lead">Tap an item to add it to the demo cart. This is static sample data built into the page.</p>
+      <div class="restaurants-grid" id="restaurantsContainer">
+        <div class="restaurant-card small">
+          <div class="restaurant-thumb" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=60')"></div>
+          <div class="restaurant-body">
+            <div class="restaurant-name">Mario's Pizzeria</div>
+            <div class="restaurant-cuisine muted">Italian • Pizza</div>
+            <div class="restaurant-meta muted">⭐ 4.8 • Delivery ₹2.39</div>
+            <div class="restaurant-actions">
+              <button class="chip">Margherita — ₹299</button>
+              <button class="chip">Pepperoni — ₹349</button>
+            </div>
+          </div>
+        </div>
+        <div class="restaurant-card small">
+          <div class="restaurant-thumb" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60')"></div>
+          <div class="restaurant-body">
+            <div class="restaurant-name">Burger Factory</div>
+            <div class="restaurant-cuisine muted">American • Burgers</div>
+            <div class="restaurant-meta muted">⭐ 4.6 • Delivery ₹2.59</div>
+            <div class="restaurant-actions">
+              <button class="chip">Classic Cheeseburger — ₹219</button>
+              <button class="chip">Veggie Burger — ₹209</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page-section" aria-labelledby="about-title">
+      <div class="about-hero">
+        <div class="about-hero-content">
+          <h2 id="about-title">About PraPoint — food delivered with care</h2>
+          <p class="lead">PraPoint is a student-built demo that showcases how a modern local food delivery experience feels — simple ordering, fast delivery, and thoughtful partner relationships.</p>
+          <p class="about-cta-row">
+            <a class="btn btn-primary" href="#menu" data-page="menu">Browse menus</a>
+            <a class="btn btn-ghost" href="#contact" data-page="contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="about-hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80" alt="Delivery driver handing over a food bag" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="page-section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p class="lead">This is a demo — no real support. But you can try the contact form to see how it would work.</p>
+
+      <form id="contactForm" class="contact-form">
+        <label>
+          Your name
+          <input type="text" id="contactName" required placeholder="e.g. Prashant" />
+        </label>
+
+        <label>
+          Your email
+          <input type="email" id="contactEmail" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Message
+          <textarea id="contactMessage" rows="4" required placeholder="Tell us what you think..."></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send (Demo)</button>
+          <button class="btn btn-ghost" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <div id="contactResult" class="contact-result" aria-live="polite"></div>
+    </section>
+    
+    <section id="sign-in" class="page-section" aria-labelledby="signin-title">
+      <h2 id="signin-title">Sign In</h2>
+      <p class="lead">Use **demo@example.com** and **password123** to test authentication.</p>
+
+      <form id="signInForm" class="contact-form">
+        <label>
+          Email
+          <input type="email" id="signInEmail" required placeholder="your@email.com" />
+        </label>
+
+        <label>
+          Password
+          <input type="password" id="signInPassword" required placeholder="********" />
+        </label>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Log In</button>
+          <button class="btn btn-ghost" type="reset">Clear</button>
+        </div>
+      </form>
+
+      <div id="signInResult" class="contact-result" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> — PraPoint (Demo)</div>
+      <nav class="footer-nav">
+        <a href="#about" data-page="about">About</a>
+        <a href="#contact" data-page="contact">Contact</a>
+        <a href="#menu" data-page="menu">Menu</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
